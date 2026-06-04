@@ -18,7 +18,9 @@ def grafic_totaluri_categorii(totaluri):
     plt.title('Total Deșeuri Colectate pe Categorii')
     plt.xlabel('Categorie')
     plt.ylabel('Cantitate (kg)')
-    plt.show()
+    plt.savefig("grafic_categorii.png")
+    print("-> Graficul a fost salvat ca 'grafic_categorii.png'. Caută-l în stânga!")
+    plt.close()
 
 def grafic_evolutie_saptamanala(evolutie):
     saptamani = sorted(list(evolutie.keys()))
@@ -29,4 +31,6 @@ def grafic_evolutie_saptamanala(evolutie):
     plt.xlabel('Săptămâna')
     plt.ylabel('Total Cantitate (kg)')
     plt.grid(True)
-    plt.show()
+    plt.savefig("grafic_evolutie.png")
+    print("-> Graficul a fost salvat ca 'grafic_evolutie.png'. Caută-l în stânga!")
+    plt.close()
