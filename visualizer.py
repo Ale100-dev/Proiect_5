@@ -31,6 +31,6 @@ def grafic_evolutie_saptamanala(evolutie):
     plt.xlabel('Săptămâna')
     plt.ylabel('Total Cantitate (kg)')
     plt.grid(True)
-   plt.savefig("grafic_evolutie.png")
+    plt.savefig("grafic_evolutie.png")
     print("-> Graficul a fost salvat ca 'grafic_evolutie.png'. Caută-l în stânga!")
     plt.close()
